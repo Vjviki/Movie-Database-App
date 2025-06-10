@@ -1,0 +1,16 @@
+.control-btn {
+  background-color: #2d055c;
+  width: 90px;
+  border-radius: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: Roboto;
+  color: #ffffff;
+  border: none;
+}
+
+.page-no {
+  font-family: Roboto;
+  color: #2d055c;
+  font-size: 20px;
+}

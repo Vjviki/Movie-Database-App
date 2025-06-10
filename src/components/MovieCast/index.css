@@ -1,0 +1,19 @@
+.cast-card img {
+  object-fit: cover;
+  height: 350px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.cast-card .card-body {
+  padding: 0.75rem;
+}
+
+.cast-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.cast-card .card-text {
+  font-size: 0.95rem;
+}
