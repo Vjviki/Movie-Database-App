@@ -1,5 +1,6 @@
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
+import MobileViewSearchBar from '../MobileViewSearchBar'
 
 import MovieCard from '../MovieCard'
 import NavBar from '../NavBar'
@@ -62,6 +63,7 @@ class Popular extends Component {
     return (
       <>
         <NavBar />
+        <MobileViewSearchBar />
         <div className="route-page-body">
           {isLoading
             ? this.renderLoadingView()

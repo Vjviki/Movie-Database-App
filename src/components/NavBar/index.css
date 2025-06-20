@@ -1,22 +1,40 @@
 .navbar-container {
-  background-color: #032541;
+  background-color: #090436;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo-container {
-  background-image: linear-gradient(to right, #8fcea1, #03b3e3);
+  background-image: linear-gradient(to right, #292170, #090436);
   text-decoration: none;
   border-radius: 8px;
+  width: 100px;
+  height: 35px;
+  border: 2px solid #1c77ed;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-container {
+    width: 140px;
+    height: 40px;
+  }
 }
 
 .page-logo {
   margin: 0;
   font-family: 'Roboto';
   font-weight: 600;
-  font-size: 28px;
-  color: #032541;
+  font-size: 19px;
+  color: #ada9c7;
   letter-spacing: 1px;
   line-height: 38px;
   padding: 0 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-logo {
+    font-size: 28px;
+  }
 }
 
 .nav-items-list {
@@ -29,10 +47,14 @@
 
 .nav-link {
   text-decoration: none;
-  color: #fff !important;
+  color: #ffffff;
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
+}
+
+.active-option {
+  color: #16dbad;
 }
 
 .search-input {
@@ -46,4 +68,58 @@
   font-style: italic;
   color: #acacac;
   min-width: 250px;
+  border-radius: 8px;
+}
+
+.menu-contaier {
+  background-color: #032541;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.menu-list-item-contaier {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0px;
+  padding: 0px;
+}
+
+.desktop-navbar-contaier {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-navbar-contaier {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.mobile-navbar-contaier {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-navbar-contaier {
+    display: none;
+  }
+}
+
+.list-item {
+  list-style: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  padding-left: 15px;
 }

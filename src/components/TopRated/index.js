@@ -1,5 +1,6 @@
 import React from 'react'
 import Loader from 'react-loader-spinner'
+import MobileViewSearchBar from '../MobileViewSearchBar'
 
 import MovieCard from '../MovieCard'
 import NavBar from '../NavBar'
@@ -63,6 +64,7 @@ class TopRated extends React.Component {
       <>
         {' '}
         <NavBar />
+        <MobileViewSearchBar />
         <div className="route-page-body">
           {isLoading
             ? this.renderLoadingView()

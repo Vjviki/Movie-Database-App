@@ -1,5 +1,5 @@
 import Loader from 'react-loader-spinner'
-
+import MobileViewSearchBar from '../MobileViewSearchBar'
 import MovieCard from '../MovieCard'
 import NavBar from '../NavBar'
 import Pagination from '../Pagination'
@@ -11,8 +11,16 @@ import './index.css'
 const SearchQuery = () => {
   const renderEmptyView = () => (
     <div className="empty-view-container">
-      <h1>No results found.</h1>
-      <p>Do not get worried, Try to search again.</p>
+      <img
+        src="https://res.cloudinary.com/df73pocxs/image/upload/e_background_removal/f_png/v1750432691/ChatGPT_Image_Jun_20_2025_08_44_34_PM_xhy4wa.png"
+        alt="not found"
+        className="not-found-img"
+      />
+      <h1 className="text-center">No Results Found</h1>
+      <p className="text-center">
+        We couldn’t locate the movie you’re looking for. Please double-check the
+        spelling or try a different title.
+      </p>
     </div>
   )
 
@@ -58,6 +66,7 @@ const SearchQuery = () => {
         return (
           <>
             <NavBar />
+            <MobileViewSearchBar />
             <div className="route-page-body">
               {renderSearchResultViews(value)}
             </div>
